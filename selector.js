@@ -31,4 +31,38 @@ $(document).ready(function () {
     $("#Button_8").click(function () {
         $("[testAttribute^='mm']").fadeOut(3000);
     });
+    // input type attribute
+    $("#Button_9").click(function () {
+        $(":button").fadeOut(3000);
+    });
+    // input type attribute
+    $("#Button_10").click(function () {
+        $(":checkbox").fadeOut(3000);
+    });
+    // parent != descendant
+    $("#Button_11").click(function () {
+        $("#parent > p.test").fadeOut(3000);
+    });
+    // contains
+    $("#Button_12").click(function () {
+        $("#test:contains('amir')").fadeOut(3000);
+    });
+    // descendant != parent
+    $("#Button_13").click(function () {
+        $("#descendantId p").fadeOut(3000);
+    });
+    // input type attribute
+    $("#Button_14").click(function () {
+        $("input:disabled").fadeOut(3000);
+    });
+    // input type attribute
+    $("#Button_15").click(function () {
+        $("input:enabled").fadeOut(3000);
+    });
+    // empty
+    $("#Button_16").click(function () {
+        $("div:empty ").fadeOut(3000);
+    });
+
+
 })
