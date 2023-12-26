@@ -63,6 +63,33 @@ $(document).ready(function () {
     $("#Button_16").click(function () {
         $("div:empty ").fadeOut(3000);
     });
-
+    // index eq
+    $("#Button_17").click(function () {
+        $("#indexSelector p:eq(2)").fadeOut(3000);
+    });
+    // even index eq
+    $("#Button_18").click(function () {
+        $("#evenSelector p:even").fadeOut(3000);
+    });
+    // file
+    $("#Button_19").click(function () {
+        $("#fileSelector :file ").fadeOut(3000);
+    });
+    // first child
+    $("#Button_20").click(function () {
+        $("#childSelector p:first-child ").fadeOut(3000);
+    });
+    // first type of ( first type select all first elements in all parent ) != first-child
+    $("#Button_21").click(function () {
+        $(".firstTypeSelector p:first-of-type ").fadeOut(3000);
+    });
+    //first element
+    $("#Button_22").click(function () {
+        $("#firstSelector p:first ").fadeOut(3000);
+    });
+//first element
+    $("#Button_23").click(function () {
+        $("#greaterThanSelector p:gt(1) ").fadeOut(3000);
+    });
 
 })
